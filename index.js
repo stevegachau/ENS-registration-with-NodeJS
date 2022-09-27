@@ -5,9 +5,9 @@ const { getReabableEtherNumber } = require("./helpers/getReadableEtherNumber");
 
 const ETH_NAME = "perrpoco1113331";
 const ETH_REGISTRAR_CONTROLLER = "0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5";
-const provider = new ethers.providers.getDefaultProvider("goerli", "15344a862df64a4caf67a612a7b2acd4");
-const privateKey = "3308cab5b93c783530104247bf459075b33b016ac8bfa60b8c450c5a947d9db3";
-const MY_ADDRESS = "0x3B1a0a2f15d1b2D9cB53456e07665aAC52559058";
+const provider = new ethers.providers.getDefaultProvider("goerli", "..."); //add provider
+const privateKey = "...";  //add privkey
+const MY_ADDRESS = "..."; //add address
 const wallet = new ethers.Wallet(privateKey, provider);
 
 const registerEns = async () => {
@@ -40,7 +40,7 @@ const registerEns = async () => {
     ETH_NAME,
     MY_ADDRESS,
     salt,
-    "0x4B1488B7a6B320d2D721406204aBc3eeAa9AD329",
+    "...",  //add address
     MY_ADDRESS
   );
 
@@ -63,7 +63,7 @@ const registerEns = async () => {
           MY_ADDRESS,
           31556952,
           salt,
-          "0x4B1488B7a6B320d2D721406204aBc3eeAa9AD329",
+          "...", //add address
           MY_ADDRESS,
           { gasLimit: 300000, value: ethers.BigNumber.from("100000000000000000").toHexString() }
         );
